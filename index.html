@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cook Blog</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,800;1,6..12,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,800;1,6..12,300&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
@@ -24,10 +27,29 @@
                 </div>
             </div>
             <div class="header-right">
-                <p style="margin: 0 10px;">ENG</p>
-                <p style="margin: 0 10px;">USD</p>
-                <span></span>
-                <button class="header-right-login">Log in</button>
+                <div  class="space">ENG<i class="fa-solid fa-caret-down"></i></div>
+                <div  class="currency space">USD
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="drop-down">
+                        <h4 class="drop-down-header">Select a currency</h4>
+                        <ul class="drop-down-item">
+                            <li class="drop-down-item-li">USD</li>
+                            <li class="drop-down-item-li">EUR</li>
+                            <li class="drop-down-item-li">UAH</li>
+                            <li class="drop-down-item-li">GBP</li>
+                            <li class="drop-down-item-li">CHF</li>
+                        </ul>
+                    </div>
+                </div>
+                <i class="fa-solid fa-circle-info"></i>
+                
+                <button class="header-right-login">Log in
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                        <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 13.25L11.75 9.5L8 5.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.75 9.5H2.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </button>
             </div>
         </header>
         <div class="container">
@@ -67,6 +89,120 @@
                     <p>Cooking catogery</p>
                 </div>
             </div>
+<!-- export-learn-->
+            <div class="export-learn">
+                <div class="explore-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="35" viewBox="0 0 46 35" fill="none">
+                        <path d="M19.5555 4.35812C27.8213 0.191495 43.1371 0.505382 43.1371 0.505382C43.1371 0.505382 49.5786 19.5106 43.1371 28.5753C33.6644 41.9059 0 28.5753 0 28.5753C0 28.5753 8.50505 9.92845 19.5555 4.35812Z" fill="#D27722"/>
+                      </svg>
+                      <div class="explore-left-text">
+                        <h2 class="explore-h3">Explore & Learn</h2>
+                        <p>Dive into a range of cooking styles and techniques tailored to your interests</p>
+                      </div>
+                </div>
+                <div class="explore-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path d="M10.0833 17.4167C14.1334 17.4167 17.4167 14.1334 17.4167 10.0833C17.4167 6.03325 14.1334 2.75 10.0833 2.75C6.03325 2.75 2.75 6.03325 2.75 10.0833C2.75 14.1334 6.03325 17.4167 10.0833 17.4167Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19.25 19.25L15.2625 15.2625" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <p>Search tutors by category </p>
+                </div>
+            </div>
+
+            <div class="categories">
+                <div class="categori-items">
+                    <div class="cate-logo-item">
+                        <img src="./img/cate-item-1.png" alt="">
+                    </div>
+                    <div class="cate-logo-content">
+                        <div class="item-header">
+                            <p class="item-header-text">Bakery</p>
+                            <i class="fa-solid fa-fire" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="item-text">
+                            <p>Master baking: from rustic bread to delicate pastries</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categori-items">
+                    <div class="cate-logo-item">
+                        <img src="./img/cate-item-7.png" alt="">
+                    </div>
+                    <div class="cate-logo-content">
+                        <div class="item-header">
+                            <p class="item-header-text">Cake</p>
+                            <i class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                        <div class="item-text">
+                            <p>Master baking: from rustic bread to delicate pastries</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categori-items">
+                    <div class="cate-logo-item">
+                        <img src="./img/cate-item-2.png" alt="">
+                    </div>
+                    <div class="cate-logo-content">
+                        <div class="item-header">
+                            <p class="item-header-text">Vegan Cooking</p>
+                            <i class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                        <div class="item-text">
+                            <p>Master baking: from rustic bread to delicate pastries</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categori-items">
+                    <div class="cate-logo-item">
+                        <img src="./img/cate-item-3.png" alt="">
+                    </div>
+                    <div class="cate-logo-content">
+                        <div class="item-header">
+                            <p class="item-header-text">Seafood Mastery</p>
+                            <i class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                        <div class="item-text">
+                            <p>Master baking: from rustic bread to delicate pastries</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categori-items">
+                    <div class="cate-logo-item">
+                        <img src="./img/cate-item-4.png" alt="">
+                    </div>
+                    <div class="cate-logo-content">
+                        <div class="item-header">
+                            <p class="item-header-text">BBQ & Grilling</p>
+                            <i class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                        <div class="item-text">
+                            <p>Master baking: from rustic bread to delicate pastries</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categori-items">
+                    <div class="cate-logo-item">
+                        <img src="./img/cate-item-5.png" alt="">
+                    </div>
+                    <div class="cate-logo-content">
+                        <div class="item-header">
+                            <p class="item-header-text">Wine Pairing</p>
+                            <i class="fa-solid fa-square-arrow-up-right"></i>
+                        </div>
+                        <div class="item-text">
+                            <p>Master baking: from rustic bread to delicate pastries</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
             <div class="benefit" style="width: 465px; margin: 0 auto;">
                 <p class="benefit-text">Our Unique Benefits</p>
                 <p>Experience the perks of learning and teaching cooking on our platform</p>
@@ -304,21 +440,91 @@
                           <h1>COOK Blog</h1>
                     </div>
                     <div class="blog-content">
-                        <div class="img-item">
-                            <img  src="./img/blog-item-1.png" alt="">
+                        <div class="blog-content-item">
+                            <div class="img-item">
+                                <img  src="./img/blog-item-1.png" alt="">
+                            </div>
+                            <div class="describle">
+                                <div class="calender">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 10H21" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                      <p>24 Apr, 2023</p>
+
+                                </div>
+                                <div class="describle-title">
+                                    <p>Mastering the Art of Homemade Pizza</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="img-item">
-                            <img src="./img/blog-item-2.png" alt="">
+                        <div class="blog-content-item">
+                            <div class="img-item">
+                                <img  src="./img/blog-item-2.png" alt="">
+                            </div>
+                            <div class="describle">
+                                <div class="calender">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 10H21" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                      <p>24 Apr, 2023</p>
+
+                                </div>
+                                <div class="describle-title">
+                                    <p>Delectable Homemade Ice Cream</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="img-item">
-                            <img src="./img/blog-item-3.png" alt="">
+                        <div class="blog-content-item">
+                            <div class="img-item">
+                                <img  src="./img/blog-item-3.png" alt="">
+                            </div>
+                            <div class="describle">
+                                <div class="calender">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 10H21" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                      <p>24 Apr, 2023</p>
+
+                                </div>
+                                <div class="describle-title">
+                                    <p>How to Prepare Authentic Mexican Tacos</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="img-item">
-                            <img src="./img/blog-item-4.png" alt="">
+                        <div class="blog-content-item">
+                            <div class="img-item">
+                                <img  src="./img/blog-item-4.png" alt="">
+                            </div>
+                            <div class="describle">
+                                <div class="calender">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 10H21" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                      <p>24 Apr, 2023</p>
+
+                                </div>
+                                <div class="describle-title">
+                                    <p>Tips and Techniques for a Restaurant-Quality Steak</p>
+                                </div>
+                            </div>
                         </div>
+
+                        
 
                     </div>
                 </div>
@@ -326,7 +532,86 @@
 
 
         </div>
-        <footer></footer>
+        
+        <div class="footer">
+            <div class="about">
+                <div class="logo-homepage">
+                    <h1 class="text-logo">COOK</h1>
+                </div>
+                <div class="about-infor">
+                    <div class="about-infor-item">
+                        <h3 class="about-h3" >ABOUT US</h3>
+                        <p class="color-p-about">who we are</p>
+                        <p class="color-p-about">how it work</p>
+                        <p class="color-p-about">COOK review</p>
+                    </div>
+
+                    <div class="about-infor-item">
+                        <h3 class="about-h3" >FOR SRUDENTS</h3>
+                        <p class="color-p-about">Cooking blog</p>
+                        <p class="color-p-about">find a tutor</p>
+                    </div>
+
+                    <div class="about-infor-item">
+                        <h3 class="about-h3" >FOR TUTOR</h3>
+                        <p class="color-p-about">Become an online chef</p>
+                        <p class="color-p-about">Teach cooking online</p>
+                    </div>
+
+                    <div class="about-infor-item">
+                        <h3 class="about-h3" >SUPPORT</h3>
+                        <p class="color-p-about">Need a help</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="contact-footer">
+                <div class="phone">
+                    <p class="color-p-about">USA</p>
+                    <p class="color-p-about">Your address goes there</p>
+                    <p class="color-p-about">+00000000</p>
+                </div>
+                <div class="social-media">
+                    <div class="about-infor-item">
+                        <h3 class="about-h3" >COOK'S SOCIAL</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M17.5 2H7.5C4.73858 2 2.5 4.23858 2.5 7V17C2.5 19.7614 4.73858 22 7.5 22H17.5C20.2614 22 22.5 19.7614 22.5 17V7C22.5 4.23858 20.2614 2 17.5 2Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.5 11.3698C16.6234 12.2021 16.4812 13.052 16.0937 13.7988C15.7062 14.5456 15.0931 15.1512 14.3416 15.5295C13.5901 15.9077 12.7384 16.0394 11.9077 15.9057C11.0771 15.7721 10.3097 15.3799 9.71479 14.785C9.11987 14.1901 8.72768 13.4227 8.59402 12.592C8.46035 11.7614 8.59202 10.9097 8.97028 10.1582C9.34854 9.40667 9.95414 8.79355 10.7009 8.40605C11.4477 8.01856 12.2977 7.8764 13.13 7.99981C13.9789 8.1257 14.7648 8.52128 15.3716 9.12812C15.9785 9.73496 16.3741 10.5209 16.5 11.3698Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 6.5H18.01" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <g clip-path="url(#clip0_769_1793)">
+                              <path d="M23.5 2.9998C22.5424 3.67528 21.4821 4.19191 20.36 4.5298C19.7577 3.83731 18.9573 3.34649 18.067 3.12373C17.1767 2.90096 16.2395 2.957 15.3821 3.28426C14.5247 3.61151 13.7884 4.1942 13.273 4.95352C12.7575 5.71283 12.4877 6.61214 12.5 7.5298V8.5298C10.7426 8.57537 9.00127 8.18561 7.43101 7.39525C5.86074 6.60488 4.51032 5.43844 3.5 3.9998C3.5 3.9998 -0.5 12.9998 8.5 16.9998C6.44053 18.3978 3.98716 19.0987 1.5 18.9998C10.5 23.9998 21.5 18.9998 21.5 7.4998C21.4991 7.22126 21.4723 6.9434 21.42 6.6698C22.4406 5.6633 23.1608 4.39251 23.5 2.9998Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_769_1793">
+                                <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M18.5 2H15.5C14.1739 2 12.9021 2.52678 11.9645 3.46447C11.0268 4.40215 10.5 5.67392 10.5 7V10H7.5V14H10.5V22H14.5V14H17.5L18.5 10H14.5V7C14.5 6.73478 14.6054 6.48043 14.7929 6.29289C14.9804 6.10536 15.2348 6 15.5 6H18.5V2Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M16.5 8C18.0913 8 19.6174 8.63214 20.7426 9.75736C21.8679 10.8826 22.5 12.4087 22.5 14V21H18.5V14C18.5 13.4696 18.2893 12.9609 17.9142 12.5858C17.5391 12.2107 17.0304 12 16.5 12C15.9696 12 15.4609 12.2107 15.0858 12.5858C14.7107 12.9609 14.5 13.4696 14.5 14V21H10.5V14C10.5 12.4087 11.1321 10.8826 12.2574 9.75736C13.3826 8.63214 14.9087 8 16.5 8Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.5 9H2.5V21H6.5V9Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4.5 6C5.60457 6 6.5 5.10457 6.5 4C6.5 2.89543 5.60457 2 4.5 2C3.39543 2 2.5 2.89543 2.5 4C2.5 5.10457 3.39543 6 4.5 6Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                    </div>
+
+                    <div class="about-infor-item">
+                        <h3 class="about-h3" >LEGAL</h3>
+                        <p class="color-p-about"> Terms Of Serivce</p>
+                        <p class="color-p-about">Privacy Policy</p>
+                    </div>
+
+                </div>
+                <p class="about-footer-text">2023 Copyright</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
