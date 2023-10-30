@@ -9,9 +9,12 @@ img{
 }
 
 header{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 20px;
+    margin: 0 auto;
+    padding: 20px;
+    
 }
 
 header >.header-left{
@@ -34,6 +37,18 @@ header .header-right{
     display: flex;
     align-items: center;
     
+}
+.header-right .menu-button{
+    
+    width: 2rem;
+    height: 2rem;
+    background-color: #D27722;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px;
+    display: none;
 }
 .space{
     padding: 10px 15px;
@@ -237,6 +252,10 @@ letter-spacing: -0.8px;
     display: flex;
     justify-content: space-between;
 }
+.benefit{
+    width: 80%;
+    margin: 0 auto;
+}
 .benefit-text{
     text-align: center;
 font-family: Rubik;
@@ -248,7 +267,7 @@ color: #252422;
 }
 .benefit-landing{
     display: flex;
-width: 90%;
+width: 80%;
 margin: 30px auto;
 justify-content: center;
 align-items: center;
