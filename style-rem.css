@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 1.25rem; /* Chuyển 20px thành 1.25rem */
+}
+
+header > .header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .header-logo {
+    margin: 0 0.625rem; /* Chuyển 10px thành 0.625rem */
+}
+
+.header-left .header-nav-button > .header-btt-text {
+    color: black;
+    margin: 0 0.625rem; /* Chuyển 10px thành 0.625rem */
+    font-weight: 700;
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+.header-right .menu-button{
+    
+    width: 2rem;
+    height: 2rem;
+    background-color: #D27722;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px;
+    display: none;
+}
+.space {
+    padding: 0.625rem 0.9375rem; /* Chuyển 10px và 15px thành 0.625rem và 0.9375rem */
+    cursor: pointer;
+}
+
+.currency {
+    position: relative;
+}
+
+.drop-down {
+    position: absolute;
+    display: none;
+    width: max-content;
+    padding: 0.625rem;
+    border: 0.0625rem #D27722 solid; /* Chuyển 1px thành 0.0625rem */
+    background-color: #fff;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.10), 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.10), 0 0.9375rem 0.9375rem 0 rgba(0, 0, 0, 0.09), 0 2.0625rem 1.25rem 0 rgba(0, 0, 0, 0.05), 0 3.6875rem 1.4375rem 0 rgba(0, 0, 0, 0.01), 0 5.5rem 1.625rem 0 rgba(0, 0, 0, 0.00);
+}
+
+.currency:hover .drop-down {
+    display: block;
+}
+
+.fa-caret-down {
+    margin: 0.3125rem; /* Chuyển 5px thành 0.3125rem */
+    color: #D27722;
+}
+
+.fa-circle-info {
+    color: #D27722;
+}
+
+.drop-down-header {
+    margin: 0.3125rem 0; /* Chuyển 5px thành 0.3125rem */
+    font-family: 'Outfit', sans-serif;
+}
+
+.drop-down-item {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem; /* Chuyển 5px thành 0.3125rem */
+}
+
+.drop-down-item-li {
+    display: inline-block;
+    padding: 0.3125rem 0.625rem; /* Chuyển 5px và 10px thành 0.3125rem và 0.625rem */
+    border-bottom: 0.0625rem solid #FFDBB8; /* Chuyển 1px thành 0.0625rem */
+    cursor: pointer;
+}
+
+.drop-down-item-li:first-child {
+    background-color: #FFDBB8;
+}
+
+.header-right .header-right-login {
+    padding: 0.5rem 0.9375rem; /* Chuyển 8px và 15px thành 0.5rem và 0.9375rem */
+    color: white;
+    background-color: #D27722;
+    border-radius: 0.25rem; /* Chuyển 4px thành 0.25rem */
+    margin: 0 0.3125rem; /* Chuyển 5px thành 0.3125rem */
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    margin: 1.875rem auto; /* Chuyển 30px thành 1.875rem */
+}
+
+.container .cont-slide {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.container .cont-slide-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem; /* Chuyển 24px thành 1.5rem */
+    width: 43.875rem; /* Chuyển 702px thành 43.875rem */
+}
+
+.expert {
+    color: #D27722;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 3.8125rem; /* Chuyển 61px thành 3.8125rem */
+    font-weight: 700;
+    line-height: 113.3%;
+    letter-spacing: -2.44px;
+}
+
+.cont-slide-left .left-text-one {
+    color: #252422;
+    font-family: Rubik;
+    font-size: 3.8125rem; /* Chuyển 61px thành 3.8125rem */
+    font-weight: 700;
+    line-height: 113.3%;
+    letter-spacing: -2.44px;
+}
+
+.cont-slide-left .left-text-two {
+    width: 33.3125rem; /* Chuyển 533px thành 33.3125rem */
+    color: #403D39;
+    font-family: Outfit;
+    font-size: 1rem; /* Chuyển 16px thành 1rem */
+    font-weight: 400;
+    line-height: 160%; /* Chuyển 25.6px thành 160% */
+}
+
+.landing-start {
+    display: flex;
+    width: 80%;
+    margin: 3.125rem auto; /* Chuyển 50px thành 3.125rem */
+    justify-content: space-around;
+    background-color: #fffdf4;
+}
+
+.landing-start .landing-item {
+    padding: 1.25rem 3.125rem; /* Chuyển 20px và 50px thành 1.25rem và 3.125rem */
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-item .landing-text {
+    color: #D27722;
+    font-family: Rubik;
+    font-size: 2.5rem; /* Chuyển 40px thành 2.5rem */
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.export-learn {
+    margin: 1.25rem auto; /* Chuyển 20px thành 1.25rem */
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explore-left {
+    display: flex;
+    gap: 0.625rem; /* Chuyển 10px thành 0.625rem */
+}
+
+.explore-right {
+    display: flex;
+    gap: 0.625rem; /* Chuyển 10px thành 0.625rem */
+}
+
+.explore-left .explore-h3 {
+    color: #252422;
+    font-size: 3.125rem; /* Chuyển 50px thành 3.125rem */
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: -1px;
+    line-height: 113%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.categories {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3.125rem auto; /* Chuyển 50px thành 3.125rem */
+    gap: 1.5rem; /* Chuyển 24px thành 1.5rem */
+    justify-content: center;
+}
+
+.categori-items {
+    width: 30%;
+    display: flex;
+    padding: 1.5rem 2.125rem; /* Chuyển 24px và 34px thành 1.5rem và 2.125rem */
+    gap: 0.625rem; /* Chuyển 10px thành 0.625rem */
+    border-radius: 1rem; /* Chuyển 16px thành 1rem */
+    border: 0.0625rem #D27722 solid; /* Chuyển 1px thành 0.0625rem */
+}
+
+.fa-square-arrow-up-right {
+    color: #D27722;
+}
+
+.item-header-text {
+    font-size: 1.5rem; /* Chuyển 24px thành 1.5rem */
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+}
+
+.categori-items:first-child {
+    background-color: #D27722;
+    color: #fff;
+}
+
+.cate-logo-item {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.cate-logo-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem; /* Chuyển 10px thành 0.625rem */
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit-text {
+    text-align: center;
+    font-family: Rubik;
+    font-size: 3.125rem; /* Chuyển 50px thành 3.125rem */
+    font-weight: 600;
+    line-height: normal;
+    color: #252422;
+}
+
+.benefit-landing {
+    display: flex;
+    width: 90%;
+    margin: 1.875rem auto; /* Chuyển 30px thành 1.875rem */
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-landing .benefit-item {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6875rem; /* Chuyển 27px thành 1.6875rem */
+    flex: 1 0 0;
+}
+
+.benefit-item .item-title {
+    font-family: Rubik;
+    font-size: 2rem; /* Chuyển 32px thành 2rem */
+    font-weight: 600;
+    line-height: normal;
+    color: #252422;
+}
+
+.far {
+    font-size: 2.5rem; /* Chuyển 40px thành 2.5rem */
+    color: #D27722;
+}
+
+.illustrasion {
+    width: 80%;
+    margin: 3.125rem auto; /* Chuyển 50px thành 3.125rem */
+    display: flex;
+}
+
+.illus-right {
+    margin: 0 1.875rem; /* Chuyển 30px thành 1.875rem */
+}
+
+.illustrasion .illus-left {
+    position: relative;
+    margin: 0 1.875rem; /* Chuyển 30px thành 1.875rem */
+}
+
+.illustrasion .review-img {
+    display: flex;
+    position: absolute;
+    bottom: -1.5625rem; /* Chuyển 25px thành 1.5625rem */
+    left: -4.375rem; /* Chuyển 70px thành 4.375rem */
+    width: 17.75rem; /* Chuyển 284px thành 17.75rem */
+    padding: 1.5rem; /* Chuyển 24px thành 1.5rem */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 1rem; /* Chuyển 16px thành 1rem */
+    color: #fff;
+    background: #D27722;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.05), 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.05), 0 0.5625rem 0.5625rem 0 rgba(0, 0, 0, 0.04), 0 1.25rem 0.75rem 0 rgba(0, 0, 0, 0.03), 0 2.1875rem 0.875rem 0 rgba(0, 0, 0, 0.01), 0 3.4375rem 0.9375rem 0 rgba(0, 0, 0, 0);
+}
+
+.illus-right .illus-right-item {
+    display: flex;
+    padding: 1rem; /* Chuyển 16px thành 1rem */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem; /* Chuyển 16px thành 1rem */
+    border-radius: 1rem; /* Chuyển 16px thành 1rem */
+    border: 0.0625rem #FFDBB8 solid; /* Chuyển 1px thành 0.0625rem */
+    background: #fff;
+}
+
+.how-work {
+    width: 80%;
+    display: flex;
+    margin: 10rem auto; /* Chuyển 160px thành 10rem */
+}
+
+.how-left {
+    display: flex;
+}
+
+.fa-magnifying-glass {
+    color: #D27722;
+}
+
+.explore-our {
+    display: flex;
+    height: max-content;
+    width: 80%;
+    margin: 5rem auto; /* Chuyển 80px thành 5rem */
+}
+
+.explore-img {
+    position: relative;
+    margin-right: 1.25rem; /* Chuyển 20px thành 1.25rem */
+}
+
+.explore-num-1 {
+    position: absolute;
+    top: -1.25rem; /* Chuyển 20px thành 1.25rem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: #D27722;
+    border-radius: 1rem; /* Chuyển 16px thành 1rem */
+    color: #fff;
+    font-size: 3.125rem; /* Chuyển 50px thành 3.125rem */
+    font-family: fantasy;
+}
+
+.explore-content {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem; /* Chuyển 30px thành 1.875rem */
+}
+
+.space {
+    margin: 1.25rem 0; /* Chuyển 20px thành 1.25rem */
+}
+
+.frame-56 {
+    width: 35%;
+    padding-top: 1.875rem; /* Chuyển 30px thành 1.875rem */
+    margin: 2.5rem auto; /* Chuyển 40px thành 2.5rem */
+    background-color: #FFFDF4;
+    position: relative;
+    border-radius: 0.3125rem; /* Chuyển 5px thành 0.3125rem */
+}
+
+.text-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem; /* Chuyển 20px thành 1.25rem */
+    font-size: 1.125rem; /* Chuyển 18px thành 1.125rem */
+}
+
+.logo-frame {
+    position: absolute;
+    width: 6.25rem; /* Chuyển 100px thành 6.25rem */
+    height: 6.25rem; /* Chuyển 100px thành 6.25rem */
+    display: flex;
+    background-color: #D27722;
+    border-radius: 3.4375rem; /* Chuyển 55px thành 3.4375rem */
+    align-items: center;
+    padding: 1.5625rem; /* Chuyển 25px thành 1.5625rem */
+    left: 40%;
+    top: -3.4375rem; /* Chuyển 55px thành 3.4375rem */
+}
+
+.frame-70 {
+    display: flex;
+    width: 80%;
+    margin: 3.125rem auto; /* Chuyển 50px thành 3.125rem */
+    justify-content: space-around;
+}
+
+.frame-70 .frame-left {
+    width: 45%;
+}
+
+.frame-check {
+    margin: 1.25rem 0; /* Chuyển 20px thành 1.25rem */
+    display: flex;
+    flex-direction: column;
+}
+
+.check-item {
+    float: left;
+}
+
+.check-item .fr70-boild {
+    font-weight: 700;
+}
+
+.fa-circle-check {
+    color: #D27722;
+}
+
+.frame-left>button {
+    padding: 1.875rem 1.25rem; /* Chuyển 30px và 20px thành 1.875rem và 1.25rem */
+    background-color: #D27722;
+    color: #fff;
+    border: none;
+    border-radius: 0.625rem; /* Chuyển 10px thành 0.625rem */
+    cursor: pointer;
+}
+
+
+.frame80-left {
+    padding: 1.875rem; /* Chuyển 30px thành 1.875rem */
+    background-color: #D27722;
+    color: #fff;
+}
+
+.check-white {
+    color: #FFFDF4;
+}
+
+.news {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 2.5rem auto; /* Chuyển 40px thành 2.5rem */
+}
+
+.hastag-tittle {
+    display: flex;
+    margin: 1.5625rem 0; /* Chuyển 25px thành 1.5625rem */
+    gap: 0.625rem; /* Chuyển 10px thành 0.625rem */
+}
+
+.tag-name {
+    list-style: none;
+    display: flex;
+    width: 20.625rem; /* Chuyển 330px thành 20.625rem */
+    flex-wrap: wrap;
+}
+
+.list-item {
+    padding: 0.625rem; /* Chuyển 10px thành 0.625rem */
+    margin: 0.625rem; /* Chuyển 10px thành 0.625rem */
+    background-color: #FFFDF4;
+    color: #D27722;
+    border: 0.0625rem solid #FFDBB8; /* Chuyển 1px thành 0.0625rem */
+    border-radius: 0.9375rem; /* Chuyển 15px thành 0.9375rem */
+    cursor: pointer;
+}
+
+.img-blog {
+    width: 50%;
+}
+
+.blog-tittle {
+    display: flex;
+    margin: 1.5625rem 0; /* Chuyển 25px thành 1.5625rem */
+    gap: 0.625rem; /* Chuyển 10px thành 0.625rem */
+}
+
+.blog-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-content-item {
+    width: 40%;
+    margin: 0.625rem; /* Chuyển 10px thành 0.625rem */
+    border: 0.0625rem solid #D27722; /* Chuyển 1px thành 0.0625rem */
+    border-radius: 1rem; /* Chuyển 16px thành 1rem */
+    overflow: hidden;
+}
+
+.calender {
+    display: flex;
+    align-items: center;
+    padding: 0.625rem; /* Chuyển 10px thành 0.625rem */
+}
+
+.describle-title {
+    font-size: 1.25rem; /* Chuyển 20px thành 1.25rem */
+    font-weight: 600;
+    padding: 0.625rem; /* Chuyển 10px thành 0.625rem */
+}
+
+.footer {
+    background-color: #D27722;
+    width: 80%;
+    margin: 0 auto;
+    bottom: 0;
+    color: #fff;
+    border-radius: 1rem 1rem 0 0;
+    padding: 1.875rem; /* Chuyển 30px thành 1.875rem */
+    position: relative;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 0.0625rem solid #FFDBB8; /* Chuyển 1px và 1px thành 0.0625rem và 0.0625rem */
+    padding: 0.625rem; /* Chuyển 10px thành 0.625rem */
+}
+
+.about-infor {
+    display: flex;
+}
+
+.about-infor-item {
+    margin: 0 1.25rem; /* Chuyển 20px thành 1.25rem */
+}
+
+.text-logo {
+    color: #FFDBB8;
+}
+
+.color-p-about {
+    color: #FFDBB8;
+}
+
+.contact-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    padding: 1.875rem; /* Chuyển 30px thành 1.875rem */
+}
+
+.social-media {
+    display: flex;
+}
+
+.about-footer-text {
+    position: absolute;
+    bottom: 0.625rem; /* Chuyển 10px thành 0.625rem */
+    right: 0.625rem; /* Chuyển 10px thành 0.625rem */
+}
+
+.about-h3 {
+    font-size: 1rem; /* Chuyển 16px thành 1rem */
+    font-style: normal;
+    font-weight: 400;
+    padding: 0.625rem 0; /* Chuyển 10px thành 0.625rem */
+    font-family: 'Outfit', sans-serif;
+}
