@@ -255,6 +255,18 @@ letter-spacing: -0.8px;
 .benefit{
     width: 80%;
     margin: 0 auto;
+    text-align: center;
+}
+.benefit-logo{
+  
+display: flex;
+width: 100px;
+height: 100px;
+padding: 25px;
+align-items: flex-start;
+gap: 10px;
+background-color: #D27722;
+border-radius: 45px;
 }
 .benefit-text{
     text-align: center;
@@ -271,6 +283,7 @@ width: 80%;
 margin: 30px auto;
 justify-content: center;
 align-items: center;
+gap: 15px;
 }
 .benefit-landing .benefit-item{
     display: flex;
@@ -458,11 +471,22 @@ background: #fff;
     display: flex;
     width: 80%;
     margin: 50px auto;
+    border-radius: 22px;
+    overflow: hidden;
+    background-color: #D27722;
+}
+.frame80-right{
+    width: 60%;
+    padding: 30px;
+    
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
 }
 .frame80-left{
-    padding: 30px;
-    background-color: #D27722;
-    color: #fff;
+    width: 40%;
     
 }
 .check-white{
