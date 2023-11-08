@@ -50,6 +50,7 @@ header >.header-left{
 header .header-right{
     display: flex;
     align-items: center;
+    gap: 10px;
     
 }
 .header-right .menu-button{
@@ -91,6 +92,11 @@ header .header-right{
 }
 .fa-circle-info{
     color: #D27722;
+    display: block;
+    padding: 5px 20px;
+    border: 0 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
 }
 .drop-down-header{
     margin: 5px 0;
@@ -120,6 +126,8 @@ header .header-right{
     display: flex;
     align-items: center;
     border: none;
+    gap: 5px;
+    
 }
 
 
