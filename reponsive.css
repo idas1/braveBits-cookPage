@@ -189,6 +189,7 @@
         justify-content: center;
         text-align: center;
         .cont-slide-left{
+            width: unset;
             .left-text-one{
                 text-align: center;
             }
