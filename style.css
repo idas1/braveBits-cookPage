@@ -57,7 +57,7 @@ header .header-right{
     
     width: 2rem;
     height: 2rem;
-    background-color: #D27722;
+    background-color: var(--color-mainpPage);
     text-align: center;
     border-radius: 8px;
     cursor: pointer;
@@ -127,7 +127,7 @@ header .header-right{
     align-items: center;
     border: none;
     gap: 5px;
-    
+
 }
 
 
