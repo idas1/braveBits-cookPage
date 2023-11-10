@@ -6,7 +6,7 @@
     line-height: 160%;
 }
 :root{
-    --color-mainpPage:#D27722;
+    --color-mainPage:#D27722;
    
 }
 img{
@@ -31,6 +31,9 @@ header{
 .font-text{
     font-family: 'Outfit',sans-serif;
 }
+.text-center{
+    text-align: center;
+}
 header >.header-left{
     display: flex;
     align-items: center;
@@ -41,10 +44,15 @@ header >.header-left{
     margin: 0 10px;
 }
 
+.header-nav-button{
+    display: flex;
+}
 .header-left .header-nav-button >.header-btt-text{
     color: black;
     margin: 0 10px;
     font-weight: 700;
+    display: flex;
+    gap: 5px;
 }
 
 header .header-right{
@@ -57,7 +65,7 @@ header .header-right{
     
     width: 2rem;
     height: 2rem;
-    background-color: var(--color-mainpPage);
+    background-color: var(--color-mainPage);
     text-align: center;
     border-radius: 8px;
     cursor: pointer;
@@ -127,6 +135,7 @@ header .header-right{
     align-items: center;
     border: none;
     gap: 5px;
+    cursor: pointer;
 
 }
 
@@ -221,6 +230,7 @@ letter-spacing: -0.8px;
 .explore-right{
     display: flex;
     gap: 10px;
+    cursor: pointer;
 }
 .explore-left .explore-h3{
     color: #252422;
@@ -295,7 +305,7 @@ height: 100px;
 padding: 25px;
 align-items: flex-start;
 gap: 10px;
-background-color: #D27722;
+background-color: var(--color-mainPage);
 border-radius: 50px;
 }
 .benefit-text{
@@ -331,6 +341,7 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 color: #252422;
+align-items: center;
 }
 
 .far{
@@ -350,6 +361,10 @@ color: #252422;
     display: flex;
     padding: 10px 40px;
     flex-direction: column;
+}
+.illus-icon{
+    display: flex;
+    gap: 10px;
 }
 .illustrasion .illus-left{
     
@@ -374,7 +389,7 @@ transform-origin: bottom left;
   transition: transform 0.3s;
 border-radius: 16px;
 color: #fff;
-background:  var(--color-mainpPage);
+background:  var(--color-mainPage);
 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 9px 9px 0px rgba(0, 0, 0, 0.04), 0px 20px 12px 0px rgba(0, 0, 0, 0.03), 0px 35px 14px 0px rgba(0, 0, 0, 0.01), 0px 55px 15px 0px rgba(0, 0, 0, 0.00);
 }
 
@@ -398,6 +413,14 @@ background: #fff;
 }
 .how-left{
     display: flex;
+}
+.how-right{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+.how-text{
 }
 .fa-magnifying-glass{
     color: #D27722;
@@ -423,7 +446,7 @@ background: #fff;
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background-color: var(--color-mainpPage);
+    background-color: var(--color-mainPage);
     border-radius: 10px;
     color: #fff;
     font-size: 49px;
@@ -438,11 +461,12 @@ background: #fff;
 .explore-btt{
     display: flex;
 padding: 8px 16px;
+margin: 15px;
 justify-content: center;
 align-items: center;
 gap: 8px;
 border-radius: 4px;
-background-color: var(--color-mainpPage);
+background-color: var(--color-mainPage);
 border: none;
 color: #fff;
 }
@@ -509,6 +533,9 @@ color: #fff;
 }
 .check-item .fr70-boild{
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
 }
 .fa-circle-check{
@@ -577,6 +604,7 @@ color: #fff;
     border: 1px solid #FFDBB8;
     border-radius: 15px;
     cursor: pointer;
+    font-family: 'Outfit', sans-serif;
 
 }
 .img-blog{
@@ -611,9 +639,7 @@ color: #fff;
     font-size: 20px;
     font-weight: 600;
     padding: 10px;
-    font-family: 'Nunito Sans', sans-serif;
-font-family: 'Pacifico', cursive;
-font-family: 'Rubik', sans-serif;
+    text-align: start;
    
 }
 
